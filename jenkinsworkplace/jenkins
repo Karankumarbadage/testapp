@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+    stages{
+        stage('first stage'){
+            steps{
+                script{
+                    sh "echo Hello World"
+                }
+            }
+        }
+    
+      stage('second stage'){
+            steps{
+                script{
+                    sh "echo Hello World"
+                }
+            }
+        }
+    }
+}
+
+    
